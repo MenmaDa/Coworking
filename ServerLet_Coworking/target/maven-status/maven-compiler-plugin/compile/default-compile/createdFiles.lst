@@ -1,0 +1,11 @@
+Logica\ClassUser_.class
+Logica\controladora.class
+com\mycompany\serverlet_coworking\svEliminarReserva.class
+Logica\ClassUser.class
+persistencia\ClassUserJpaController.class
+persistencia\controladoraPersistencia.class
+persistencia\exceptions\NonexistentEntityException.class
+com\mycompany\serverlet_coworking\svReserva.class
+persistencia\exceptions\PreexistingEntityException.class
+persistencia\exceptions\IllegalOrphanException.class
+com\mycompany\serverlet_coworking\svListaReservas.class

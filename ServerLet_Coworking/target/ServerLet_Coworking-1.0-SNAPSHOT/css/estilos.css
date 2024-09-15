@@ -1,0 +1,103 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background: #000;
+	color: #000;
+	font-family: 'Roboto', sans-serif;
+}
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: repeat(3, auto);
+	grid-template-areas: "header 	header"
+                             "contenido contenido"
+                             "footer 	footer";
+}
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+	background: coral;
+	padding: 20px;
+	border-radius: 4px;
+}
+.contenedor .header {
+	background: #12203E;
+	color: #fff;
+	grid-area: header;
+}
+.contenedor .header img{
+	width: 100%;
+}
+.contenedor .contenido {
+	grid-area: contenido;
+}
+
+.contenedor .footer {
+	background: #12203E;
+	color: #fff;
+	text-align: center;
+	grid-area: footer;
+}
+
+/*Formulario*/
+
+form {
+	background: burlywood;
+	border: 3px solid #f1f1f1;
+	margin: 10px 5px;
+	padding: 10px;
+  }
+
+  p[name="label"], hr{
+    width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	box-sizing: border-box;
+	font-size: 1em;  
+  }
+  
+input[type=text], select[id="Espacio_Trabajo"], input[type=date], input[type=time] {
+    background: white;
+    color: black;
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	box-sizing: border-box;
+	font-size: 1em;
+  }
+  
+  button {
+	background-color: #12203E;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	cursor: pointer;
+	width: 100%;
+	font-size: 1.2em;
+	text-decoration: double;
+  }
+
+  button:hover {
+	opacity: 0.5;
+  }
+  
+/*Responsiv*/
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas: 	"header 	header 		header"
+					"contenido 	contenido 	contenido"
+					"footer 	footer 		footer";
+	}
+}
